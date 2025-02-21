@@ -11,8 +11,5 @@ FRAMEWORK_NAME=$2
 echo "git commit all without framework and push"
 git add "GizoSDK/$NEW_VERSION/"
 git commit -m "New $FRAMEWORK_NAME version $NEW_VERSION"
-# git tag -a $NEW_VERSION -m "Version $NEW_VERSION"
-git push
-
-echo "Releasing the new version"
-gh release create "$NEW_VERSION"
+git tag $NEW_VERSION
+git push origin --tags
