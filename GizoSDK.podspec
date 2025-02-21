@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Tech' => 'tech@artificient.de' }
   s.source           = { :http => "https://github.com/artificient-ai/gizo-ios-sdk-cocoapods-alpha/raw/#{s.version}/GizoSDK/#{s.version}/GizoSDK.zip" }
-  s.platform = :ios, '15.1'
+  s.platform = :ios, '15.6'
   s.vendored_frameworks = 'GizoSDK.xcframework'
 end
