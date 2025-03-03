@@ -12,4 +12,5 @@ echo "git commit all without framework and push"
 git add "GizoSDK/$NEW_VERSION/"
 git commit -m "New $FRAMEWORK_NAME version $NEW_VERSION"
 git tag $NEW_VERSION
+git push
 git push origin --tags
